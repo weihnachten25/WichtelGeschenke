@@ -12,6 +12,7 @@ Ein Weihnachtsgeschenk für Elias - Eine Web-Anwendung, die automatisch per Emai
 - 🎯 **Einfache Bedienung** - Einfach Anzahl der Biere und Email eingeben
 - 📱 **Responsive Design** - Funktioniert auf allen Geräten
 - 🎭 **Toast-Benachrichtigungen**
+- ♿ **Accessibility** - Barrierefreie Bedienung
 
 ## 🚀 Live Demo
 
