@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bier Reminder für Elias - Automatische Email-Erinnerungen zum Bier trinken">
+  <title>Bier Remeindohr für Elias 🍺</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Animated carbonation bubbles -->
+  <div class="bubbles-container">
+    <div class="bubble bubble-1"></div>
+    <div class="bubble bubble-2"></div>
+    <div class="bubble bubble-3"></div>
+    <div class="bubble bubble-4"></div>
+    <div class="bubble bubble-5"></div>
+    <div class="bubble bubble-6"></div>
+    <div class="bubble bubble-7"></div>
+    <div class="bubble bubble-8"></div>
+    <div class="bubble bubble-9"></div>
+    <div class="bubble bubble-10"></div>
+    <div class="bubble bubble-11"></div>
+    <div class="bubble bubble-12"></div>
+    <div class="bubble bubble-13"></div>
+    <div class="bubble bubble-14"></div>
+    <div class="bubble bubble-15"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <span class="emoji">🍺</span>
+      <h1>Bier Remeindohr</h1>
+      <p>Für Elias 🎄</p>
+    </div>
+
+    <div class="info-box">
+      <p>
+        <strong>So funktioniert's:</strong><br>
+        Nachdem du auf Start klickst, bekommst du die erste Bier Benachrichtigung. Die nächsten Benachrichtigungen bekommst du automatisch per Email.
+      </p>
+    </div>
+
+    <form id="reminderForm" novalidate>
+      <div class="form-group">
+        <label for="beerCount">Anzahl der Biere 🍺</label>
+        <input 
+          type="number" 
+          id="beerCount" 
+          name="beerCount"
+          min="1" 
+          max="20"
+          placeholder="z.B. 5"
+          required
+          aria-required="true"
+          aria-label="Anzahl der zu trinkenden Biere"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email-Adresse 📧</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email"
+          placeholder="deine@email.de"
+          required
+          aria-required="true"
+          aria-label="Email-Adresse für Erinnerungen"
+        />
+      </div>
+
+      <div class="button-container">
+        <button type="submit" id="startBtn" aria-label="Reminder starten">
+          <span id="buttonText">START</span>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
