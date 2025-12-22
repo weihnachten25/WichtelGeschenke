@@ -1,6 +1,6 @@
 # 🍺 Bier Reminder
 
-Ein Weihnachtsgeschenk für Elias - Eine schöne Web-Anwendung, die automatisch per Email an das Trinken von Bier erinnert.
+Ein Weihnachtsgeschenk für Elias - Eine Web-Anwendung, die automatisch per Email an das Trinken von Bier erinnert.
 
 ![Bier Reminder](https://img.shields.io/badge/Status-Live-success)
 ![License](https://img.shields.io/badge/License-MIT-blue)
@@ -11,7 +11,7 @@ Ein Weihnachtsgeschenk für Elias - Eine schöne Web-Anwendung, die automatisch 
 - 📧 **Automatische Email-Erinnerungen** über Supabase Edge Functions
 - 🎯 **Einfache Bedienung** - Einfach Anzahl der Biere und Email eingeben
 - 📱 **Responsive Design** - Funktioniert auf allen Geräten
-- 🎭 **Toast-Benachrichtigungen** statt lästiger Alerts
+- 🎭 **Toast-Benachrichtigungen**
 - ♿ **Accessibility** - Barrierefreie Bedienung
 
 ## 🚀 Live Demo
