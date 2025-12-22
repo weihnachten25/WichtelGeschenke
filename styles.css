@@ -10,6 +10,13 @@
 /* ============================================
    Body & Background - Beer Theme
    ============================================ */
+html {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   background: linear-gradient(to bottom, 
@@ -21,14 +28,17 @@ body {
     #b8860b 100%     /* Dark golden bottom */
   );
   min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height for mobile */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
   position: relative;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  touch-action: pan-y; /* Enable vertical scrolling on touch devices */
+  overscroll-behavior-y: contain; /* Prevent overscroll bounce on mobile */
 }
 
 /* Beer Foam at the top */
@@ -269,6 +279,8 @@ body::after {
   position: relative;
   z-index: 10;
   animation: slideIn 0.5s ease-out;
+  margin: auto;
+  flex-shrink: 0;
 }
 
 @keyframes slideIn {
@@ -514,17 +526,28 @@ button:disabled {
    Responsive Design
    ============================================ */
 @media (max-width: 600px) {
+  html {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   body {
     align-items: flex-start;
     padding: 1rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
   }
 
   .container {
     padding: 2rem 1.5rem;
-    margin: auto;
+    margin: 0 auto;
     max-height: none;
+    width: calc(100% - 2rem);
   }
 
   .header h1 {
