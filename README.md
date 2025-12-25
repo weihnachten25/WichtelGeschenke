@@ -1,6 +1,6 @@
 # 🍺 Bier Reminder
 
-Ein Weihnachtsgeschenk für Elias und Denny - Eine Web-Anwendung, die automatisch per Email an das Trinken von Bier erinnert.
+Ein Weihnachtsgeschenk für Elias, Madlen und Denny - Eine Web-Anwendung, die automatisch per Email an das Trinken von Bier erinnert.
 
 ![Bier Reminder](https://img.shields.io/badge/Status-Live-success)
 ![License](https://img.shields.io/badge/License-MIT-blue)
